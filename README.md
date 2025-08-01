@@ -59,17 +59,20 @@ A modern, minimal charity website built with React SSG, designed for easy conten
 ### Setup
 
 1. Clone the repository:
+
 ```bash
 git clone <repository-url>
 cd charity-website
 ```
 
 2. Install dependencies:
+
 ```bash
 bun install
 ```
 
 3. Start development server:
+
 ```bash
 bun run dev
 ```
@@ -118,6 +121,7 @@ bun run build
 ```
 
 This creates a `dist/` folder with:
+
 - Static HTML files for each route
 - Bundled and minified JavaScript
 - CSS files
@@ -126,11 +130,13 @@ This creates a `dist/` folder with:
 ### Deployment to S3 + CloudFront
 
 1. **Build the site:**
+
 ```bash
 bun run build
 ```
 
 2. **Upload to S3:**
+
 ```bash
 aws s3 sync dist/ s3://your-bucket-name --delete
 ```
@@ -159,7 +165,7 @@ For production deployments, you may want to set:
 
 The site is optimized for performance:
 
-- **Static generation** - No server-side rendering delays  
+- **Static generation** - No server-side rendering delays
 - **Minimal JavaScript** - Only essential client-side code
 - **Efficient bundling** - Bun's fast bundler with automatic optimization
 - **CSS optimization** - Minimal, modern CSS without frameworks
@@ -186,6 +192,7 @@ This project is open source and available under the [MIT License](LICENSE).
 ## Support
 
 For questions or issues:
+
 - Create an issue on GitHub
 - Contact the development team
 - Check the documentation in `/docs` (if available)

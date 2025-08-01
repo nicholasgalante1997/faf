@@ -3,10 +3,11 @@
 import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 
-import { writeFile, copyFile, readdir } from "fs/promises";
+import { writeFile, readdir } from "fs/promises";
 import { join, extname, relative } from "path";
 
 import { getHtmlTemplate } from "./templates/html";
+import { copyFile } from "./utils/copy";
 import { ensureDir } from "./utils/dir";
 
 import App from "../src/App";
@@ -17,6 +18,8 @@ const SRC_DIR = "./src" as const;
 
 async function copyAssets() {
   console.log("📁 Copying static assets...");
+
+  console.log("Copying css...");
   try {
     const cssFiles = await readdir(join(SRC_DIR, "styles"));
     for (const file of cssFiles) {
@@ -26,6 +29,18 @@ async function copyAssets() {
     }
   } catch (error) {
     console.error("❌ Error copying assets:", error);
+    process.exit(1);
+  }
+
+  console.log("Copying images...");
+  try {
+    const assetsDir = join(process.cwd(), "public", "assets");
+    const imageFiles = await readdir(assetsDir);
+    for (const file of imageFiles) {
+      await copyFile(join(assetsDir, file), join(DIST_DIR, "assets", file));
+    }
+  } catch (error) {
+    console.error("❌ Error copying images:", error);
     process.exit(1);
   }
 }

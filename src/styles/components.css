@@ -61,7 +61,7 @@
 }
 
 .nav-link.active::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -17px;
   left: 0;
@@ -509,7 +509,8 @@
   border-left: 4px solid #2081e2;
 }
 
-.page ul, .page ol {
+.page ul,
+.page ol {
   margin-left: 2rem;
   margin-bottom: 1rem;
 }
@@ -549,54 +550,54 @@ address {
     gap: 1rem;
     padding: 0 1rem;
   }
-  
+
   .nav-links {
     gap: 1.5rem;
   }
-  
+
   .hero-content {
     grid-template-columns: 1fr;
     text-align: center;
     gap: 2rem;
   }
-  
+
   .hero-text {
     order: 2;
   }
-  
+
   .hero-image {
     order: 1;
   }
-  
+
   .hero-text h1 {
     font-size: 2.5rem;
   }
-  
+
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .footer-bottom {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
   }
-  
+
   .cta-buttons {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .form-buttons {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .form-buttons .btn {
     width: 200px;
   }
-  
+
   .stats-section,
   .cta-section {
     margin-left: 0.75rem;
@@ -609,19 +610,19 @@ address {
   .hero {
     padding: 3rem 0;
   }
-  
+
   .hero-text h1 {
     font-size: 2rem;
   }
-  
+
   .stats-section {
     padding: 2rem 1rem;
   }
-  
+
   .cta-section {
     padding: 3rem 1rem;
   }
-  
+
   .program-cta,
   .impact-cta,
   .donation-form-section,
@@ -629,11 +630,11 @@ address {
     padding: 2rem 1rem;
     margin: 2rem 0.75rem;
   }
-  
+
   .nav-container {
     padding: 0 0.75rem;
   }
-  
+
   .nav-links {
     gap: 1rem;
     flex-wrap: wrap;

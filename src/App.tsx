@@ -4,6 +4,8 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Programs from "./pages/Programs";
+import Blog from "./pages/Blog";
+import BlogPost from "./pages/BlogPost";
 import Impact from "./pages/Impact";
 import Donate from "./pages/Donate";
 import Contact from "./pages/Contact";
@@ -21,6 +23,7 @@ const componentMap = {
   Home,
   About,
   Programs,
+  Blog,
   Impact,
   Donate,
   Contact,
@@ -36,10 +39,10 @@ export default function App({ initialRoute = "/" }: AppProps) {
 
     // Handle client-side navigation
     const handleLinkClick = (e: Event) => {
-      const target = e.target as HTMLAnchorElement;
-      if (target.tagName.toUpperCase() === "A" && target.origin === window.location.origin) {
+      const anchor = (e.target as HTMLElement).closest("a");
+      if (anchor && anchor.origin === window.location.origin) {
         e.preventDefault();
-        const path = target.pathname;
+        const path = anchor.pathname;
         window.history.pushState({}, "", path);
         setCurrentRoute(path);
       }
@@ -55,6 +58,22 @@ export default function App({ initialRoute = "/" }: AppProps) {
       };
     }
   }, []);
+
+  // Check if this is a blog post route
+  const isBlogPostRoute = currentRoute.startsWith("/blog/") && currentRoute !== "/blog";
+
+  if (isBlogPostRoute) {
+    const slug = currentRoute.replace("/blog/", "");
+    return (
+      <div className="app">
+        <Header currentRoute={currentRoute} />
+        <main>
+          <BlogPost slug={slug} />
+        </main>
+        <Footer />
+      </div>
+    );
+  }
 
   const currentRouteData = routes.find((route) => route.path === currentRoute) || routes[0];
   const Component = currentRouteData

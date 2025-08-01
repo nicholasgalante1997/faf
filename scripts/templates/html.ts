@@ -12,8 +12,12 @@ export function getHtmlTemplate(
     <meta name="description" content="${
       route.description || "Building hope, changing lives through compassionate action and community support."
     }">
+    <link rel="preload" as="style" href="/main.css" />
     <link rel="stylesheet" href="/main.css">
+    <link rel="preload" as="style" href="/components.css" />
     <link rel="stylesheet" href="/components.css">
+    <link rel="preload" as="style" href="/blog.css" />
+    <link rel="stylesheet" href="/blog.css">
 </head>
 <body>
     <div id="root">${html}</div>

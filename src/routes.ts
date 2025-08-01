@@ -25,6 +25,12 @@ export const routes: Route[] = [
     component: "Programs",
   },
   {
+    path: "/blog",
+    title: "Stories",
+    description: "Read inspiring stories from our Friend Partners and community members.",
+    component: "Blog",
+  },
+  {
     path: "/impact",
     title: "Our Impact",
     description: "See the real-world impact of your donations and our collective efforts.",

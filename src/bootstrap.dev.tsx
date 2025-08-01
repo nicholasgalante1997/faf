@@ -17,10 +17,29 @@ const server = serve({
   },
 
   // Prior to v1.2.3, the `fetch` option was used to handle all API requests. It is now optional.
-  // async fetch(req) {
-  //   // Return 404 for unmatched routes
-  //   return new Response("Not Found", { status: 404 });
-  // },
+  async fetch(req) {
+    // Implement static file serving from the "public/assets" directory
+    console.log("Received request:", req.method, req.url);
+
+    if (req.method === "GET" && req.url.startsWith("/assets/")) {
+      const filePath = req.url.replace("/assets", "public/assets");
+      console.log("Serving static file:", filePath);
+      try {
+        const file = Bun.file(filePath);
+        return new Response(await file.arrayBuffer(), {
+          headers: {
+            "Content-Type": file.type || "application/octet-stream",
+          },
+        });
+      } catch (error) {
+        console.error("File not found:", filePath, error);
+        return new Response("Not Found", { status: 404 });
+      }
+    }
+
+    // Return 404 for unmatched routes
+    return new Response("Not Found", { status: 404 });
+  },
 });
 
 console.log(`Listening on ${server.url}`);
