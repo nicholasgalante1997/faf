@@ -1,11 +1,13 @@
 export const programsContent = `
 # Our Programs
 
-## Healthcare Access Initiative
+## Mentorship Program
 
-### Bringing Medical Care to Remote Communities
+### Join our Mentorship Program and become a Mentor to an individual in need.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Our mentors in our Mentorship Program are compassionate, thoughtful individuals who go above and beyond in lending their time, and insight to others who have gone through similar life experiences. 
+
+They provide an invaluable resource to our mentees, and seek to support them in navigating their current life 
 
 **Impact:** 15,000+ patients treated annually  
 **Locations:** 12 countries across Africa and Southeast Asia  

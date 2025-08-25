@@ -9,21 +9,21 @@ Every child deserves a chance to dream, to grow, and to thrive. Through compassi
 export const impactStats = `
 ## Our Impact This Year
 
-**125,000+** Lives Touched
-**45** Countries Reached  
-**$2.3M** Raised for Programs
-**89%** Goes Directly to Programs
+**Over 50** Accredited Mentors
+**Over 10 States Reached** Across the United States
+**10,000 Volunteer Hours** Reached in the Last Year
+**100%** Non Profit 
 `;
 
 export const programsPreview = `
 ## How We're Making a Difference
 
-### Healthcare Access
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+### Mental Health Support
+Our mentors provide a range of mental health support practices, grounded in fostering meaningful relationships through shared life experiences.
 
-### Education Support  
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+### 24/7 Hotline
+Our mentors make themselves available as needed for our partners. We do not subscribe to a set of working hours, when our partners need us we prioritize rapid timely support.
 
-### Emergency Relief
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+### Personal Growth
+Our mentors support establishing tangible goals and roadmaps for achieving those goals, to enable growth in our partners.
 `;

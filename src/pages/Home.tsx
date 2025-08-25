@@ -75,8 +75,8 @@ function Home() {
           <div className="cta-content">
             <h2>Ready to Make a Difference?</h2>
             <p>
-              Your support helps us reach more communities and change more lives. Every donation, no matter
-              the size, creates ripples of positive change.
+              Your support helps us reach more communities and change more lives. Every interaction, no matter
+              how small, creates ripples of positive change.
             </p>
             <a href="/donate" className="btn btn-primary btn-large">
               Start Helping Today

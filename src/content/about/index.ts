@@ -1,42 +1,40 @@
 export const aboutContent = `
-# About Hope Foundation
+# About Friends Already Foundation
 
 ## Our Mission
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+The <b>Friends Already Foundation</b> is dedicated to fostering and amplifying growth in kids, teens and adults all over the country through meaningful connection, mentorship and kindness.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+## Radical Connection
 
-## Our Values
+We believe every person we meet is already a friend, our work begins from connection, not separation. We actively seek to break down walls of unfamiliarity, replacing them with empathy, understanding, and shared humanity.
 
-### Compassion
-Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+## Compassion in Action
 
-### Transparency  
-Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+Friendship is more than words, it's showing up, lending a hand, and offering comfort without being asked. We commit to turning care into concrete action for those who need it most.
 
-### Impact
-Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni.
+## Unity Through Diversity
 
-### Community
-But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born.
+Our differences are not barriers, they're bridges. We honor every background, culture, and story, knowing that diversity is what makes friendship richer and community stronger.
+
+## Everyday Impact
+
+Small acts matter. We strive to create daily moments of kindness and support, proving that consistent love and connection can transform lives and entire communities.
 
 ## Our Story
 
-Founded in 2015, Hope Foundation began with a simple belief: that every person deserves access to basic human needs like healthcare, education, and opportunity.
+The Friends Already Foundation began with a simple, defiant belief — that we are not strangers crossing paths by chance, but friends whose introductions are simply overdue. In a time when the world too often builds walls between people, we choose to start where friendship begins — with connection, trust, and open hearts. We believe that the thread between us is already there; our work is simply to pull it tighter.
 
-At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+We live by the promise of compassion in action — not just feeling for others, but stepping forward, standing beside them, and proving that care is most powerful when it moves. We find strength in unity through diversity, celebrating every culture, story, and perspective as a vital part of our shared human tapestry. And we believe in the quiet power of everyday impact — the small, intentional acts of kindness that ripple outward and create lasting change.
 
-Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
+This is not just a foundation — it's an invitation. An invitation to see one another differently, to live as if we were friends already, and to help create a world where no one stands alone.
 
 ## Leadership Team
 
-### Sarah Johnson - Executive Director
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus.
+### Max Frank - Founder, Chief Executive Officer
+*Lifelong volunteer, National Childrens Cancer Society Mentor and fellow survivor dedicated to providing and scaling universal support and connection.*
 
-### Michael Chen - Program Director  
-Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.
+### Nick Galante - Chief Technology Officer, Senior IT Administrator
+*Passionate about animal welfare, software development, and leveraging Technology to bridge the modern communication gap*
 
-### Dr. Amara Okafor - Medical Advisor
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 `;
