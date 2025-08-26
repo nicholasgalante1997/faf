@@ -36,6 +36,13 @@ export const routes: Route[] = [
     public: true,
   },
   {
+    path: "/our-creation",
+    title: "Our Creation",
+    description: "Read about how the 'Friends Already Foundation' was started.",
+    component: "CreationStory",
+    public: true,
+  },
+  {
     path: "/impact",
     title: "Our Impact",
     description: "See the real-world impact of your donations and our collective efforts.",

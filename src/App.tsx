@@ -9,6 +9,7 @@ import BlogPost from "./pages/BlogPost";
 import Impact from "./pages/Impact";
 import Donate from "./pages/Donate";
 import Contact from "./pages/Contact";
+import CreationStory from "./pages/CreationStory";
 import { routes } from "./routes";
 
 function ErrorPage() {
@@ -27,6 +28,7 @@ const componentMap = {
   Impact,
   Donate,
   Contact,
+  CreationStory
 };
 
 export default function App({ initialRoute = "/" }: AppProps) {
