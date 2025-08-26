@@ -11,10 +11,7 @@ export default function Programs() {
         <div className="program-cta">
           <h2>Ready to Make an Impact?</h2>
           <div className="cta-buttons">
-            <a href="/donate" className="btn btn-primary">
-              Support Our Programs
-            </a>
-            <a href="/contact" className="btn btn-outline">
+            <a href="mailto:friendsalreadyfoundation@gmail.com" className="btn btn-primary">
               Get Involved
             </a>
           </div>

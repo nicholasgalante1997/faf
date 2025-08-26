@@ -36,19 +36,13 @@ function Home() {
           <div className="hero-text">
             <ReactMarkdown>{heroContent}</ReactMarkdown>
             <div className="hero-actions">
-              <a href="/donate" className="btn btn-primary">
-                Donate Now
-              </a>
-              <a href="/programs" className="btn btn-secondary">
+              <a href="/blog" className="btn btn-primary">
                 Learn More
               </a>
             </div>
           </div>
           <div className="hero-image">
-            <div className="image-placeholder">
-              <span>🌟</span>
-              <p>Hero Image Placeholder</p>
-            </div>
+            <img height="100%" width="100%" src="/assets/logo.png" />
           </div>
         </div>
       </section>

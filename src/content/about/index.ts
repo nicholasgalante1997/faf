@@ -3,7 +3,7 @@ export const aboutContent = `
 
 ## Our Mission
 
-The <b>Friends Already Foundation</b> is dedicated to fostering and amplifying growth in kids, teens and adults all over the country through meaningful connection, mentorship and kindness.
+The **Friends Already Foundation** is dedicated to fostering and amplifying growth in kids, teens and adults all over the country through meaningful connection, mentorship and kindness.
 
 ## Radical Connection
 

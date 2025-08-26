@@ -18,7 +18,8 @@ function Blog() {
         </div>
 
         {/* Featured Posts Section */}
-        <div className="featured-posts">
+        {/* Think about if we want back Featured stories */}
+        <div className="featured-posts" style={{ display: "none" }}>
           <h2>Featured Stories</h2>
           <div className="featured-posts-grid">
             {blogPosts

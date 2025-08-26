@@ -75,7 +75,8 @@ export default function App({ initialRoute = "/" }: AppProps) {
     );
   }
 
-  const currentRouteData = routes.find((route) => route.path === currentRoute) || routes[0];
+  const publicRoutes = routes.filter(route => route.public);
+  const currentRouteData = publicRoutes.find((route) => route.path === currentRoute) || publicRoutes[0];
   const Component = currentRouteData
     ? componentMap[currentRouteData.component as keyof typeof componentMap]
     : ErrorPage;

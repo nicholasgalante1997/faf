@@ -55,7 +55,7 @@ function BlogPost({ slug }: BlogPostProps) {
 
           <div className="blog-post-author-section">
             <div className="author-avatar-large">
-              <img src={post.author.image} alt={post.author.name} />
+              <img src={post.author.image} alt={post.author.name} height="240px" width="auto" style={{ borderRadius: "10px", aspectRatio: "0.6" }} />
             </div>
             <div className="author-details">
               <h3 className="author-name">{post.author.name}</h3>

@@ -9,6 +9,8 @@ interface HeaderProps {
 function Header({ currentRoute }: HeaderProps) {
   const navRef = useRef<HTMLElement>(null);
 
+  const publicRoutes = routes.filter(route => route.public);
+
   useEffect(() => {
     if (navRef.current) {
       // Animate header on mount
@@ -29,7 +31,7 @@ function Header({ currentRoute }: HeaderProps) {
           </a>
 
           <ul className="nav-links">
-            {routes.map((route) => (
+            {publicRoutes.map((route) => (
               <li key={route.path}>
                 <a href={route.path} className={`nav-link ${currentRoute === route.path ? "active" : ""}`}>
                   {route.title}
@@ -38,8 +40,8 @@ function Header({ currentRoute }: HeaderProps) {
             ))}
           </ul>
 
-          <a href="/donate" className="donate-btn">
-            Donate Now
+          <a href="/blog" className="donate-btn">
+            Learn More
           </a>
         </div>
       </nav>
